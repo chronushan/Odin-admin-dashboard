@@ -41,6 +41,8 @@ ul {
 
 .search {
 	display: flex;
+	justify-content: space-between;
+	padding: 1rem 2rem 0rem;
 }
 
 .nav {
@@ -85,4 +87,67 @@ ul {
 	padding-top: 2rem;
 	display: flex;
 	gap: 1.5rem;
+}
+
+.logo img {
+	height: 3.5em;
+}
+
+.search img {
+	height: 2rem;
+}
+
+input {
+	border-radius: 15px;
+	width: 450px;
+}
+
+form {
+	display: flex;
+	height: 2rem;
+	gap: 20px;
+}
+
+.user-name img {
+	object-fit: cover;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+}
+
+.profile-picture {
+	border: black solid 3px;
+}
+
+.user-name {
+	display: flex;
+	justify-content: space-around;
+	gap: 2rem;
+	align-items: center;
+}
+
+.user-name p {
+	font-size: x-large;
+	font-weight: bolder;
+}
+
+.dashboard {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+}
+
+.cards {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-template-rows: auto 1fr;
+}
+
+.card {
+	background-color: white;
+}
+
+.cards > p {
+	grid-column: 1/-1;
+	grid-row: auto;
 }
