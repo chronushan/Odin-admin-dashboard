@@ -38,6 +38,8 @@ ul {
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);
 	background-color: #caf4ff;
+	z-index: 10;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
 }
 
 .search {
