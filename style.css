@@ -56,11 +56,14 @@ ul {
 .cards {
 	display: grid;
 	grid-template: repeat(auto-fit, 200px) / repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	margin: 15px;
 }
 
 .dashboard-rightside {
 	display: flex;
 	flex-direction: column;
+	margin-right: 15px;
 }
 
 .announcements {
@@ -133,22 +136,16 @@ form {
 	grid-template-columns: 4fr 1fr;
 }
 
-.cards {
-	display: grid;
-	gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-template-rows: auto;
-	grid-auto-rows: repeat(auto-fit, minmax(auto, 1fr));
+.main-dashboard {
+	display: flex;
+	flex-direction: column;
 }
 
 .card {
 	background-color: white;
-}
-
-.title {
-	grid-row: 1;
-	grid-column: 1/-1;
-	height: max-content;
+	border-left: #caf4ff solid 8px;
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
 }
 
 .nav {
@@ -193,4 +190,28 @@ button {
 	color: white;
 	border: none;
 	border-radius: 20px;
+}
+
+.main-dashboard h2 {
+	padding: 25px 0px 10px 20px;
+}
+
+.dashboard-rightside h2 {
+	padding: 25px 0px 10px 0px;
+}
+
+.announcements > div,
+.trending > div {
+	background-color: white;
+	padding: 20px 30px;
+	margin-top: 15px;
+	box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
+}
+
+.announcements div > div:nth-child(3),
+.announcements div > div:nth-child(5) {
+	margin: 20px 0px;
+}
+.announcements div > div:first-child {
+	margin-bottom: 20px;
 }
